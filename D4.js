@@ -48,7 +48,7 @@ console.log(crazyDiff(18))
  se n è uguale a 400.
 */
 const boundary = function(n) {
-    if(n>=20 && n<=100) {
+    if(n>=20 || n<=100) {
         return true
     }
     else if (n===400){ return true
@@ -103,10 +103,12 @@ check3and7(34)
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 const reverseString= function (str){
-    const modifiedStr = str.slice(3)
-return modifiedStr.split('').reverse().join('')}
-console.log(reverseString('GIULIO'))
-
+  let inverted = ''
+  for(let i=str.length -1;i >=0;i--){
+    inverted =inverted + str[i]
+  } return inverted
+}
+console.log(reverseString('EPICODE'))
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
