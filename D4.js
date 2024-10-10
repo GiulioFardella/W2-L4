@@ -120,7 +120,10 @@ const upperFirst = function (str){
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
 */
-
+const cutString = function(str) {
+return str.slice(1,-1)
+}
+ console.log(cutString('Buonasera'))
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 10
